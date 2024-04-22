@@ -1,0 +1,9 @@
+- id: ensure-venv
+  name: ensure-venv
+  description: Ensure Python virtual environment is activated
+  entry: ./ensure_venv.py
+  language: system
+  pass_filenames: false
+  require_serial: true
+  always_run: true
+  fail_fast: true
