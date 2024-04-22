@@ -4,7 +4,7 @@ A [pre-commit](https://pre-commit.com/) hook that ensures the Python virtual env
 
 ## Use case
 
-You have your own `.pre-commit-config.yaml' configuration with specified `repo: local' hooks that run locally installed linters and code formatters, i.e. `flake8`, `ruff`, `isort`, `mypy`, etc.
+You have your own `.pre-commit-config.yaml` configuration with specified `repo: local` hooks that run locally installed linters and code formatters, i.e. `flake8`, `ruff`, `isort`, `mypy`, etc.
 
 ```yaml
 -   repo: local
@@ -20,7 +20,7 @@ You have your own `.pre-commit-config.yaml' configuration with specified `repo: 
         pass_filenames: false
 ```
 
-You may want to ensure that the `mypy' executable used in the pre-commit hook is the one installed locally in your project's virtual environment, not the one taken from the global site-packages. You can use the `ensure-venv` hook to do this:
+You may want to ensure that the `mypy` executable used in the pre-commit hook is the one installed locally in your project's virtual environment, not the one taken from the global site-packages. You can use the `ensure-venv` hook to do this:
 
 ```yaml
 -   repo: https://github.com/diachkow/ensure-venv-pre-commit
@@ -29,7 +29,7 @@ You may want to ensure that the `mypy' executable used in the pre-commit hook is
     -   id: ensure-venv
 ```
 
-You must place this hook before any `repo: local' hooks that need to use the locally installed executable. The final configuration will look like this
+You must place this hook before any `repo: local` hooks that need to use the locally installed executable. The final configuration will look like this
 
 ```yaml
 # ... other non-local hooks ...
