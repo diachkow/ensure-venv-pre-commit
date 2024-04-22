@@ -1,8 +1,8 @@
 - id: ensure-venv
   name: ensure-venv
   description: Ensure Python virtual environment is activated
-  entry: ./ensure_venv.py
-  language: system
+  entry: ensure_venv.py
+  language: script
   pass_filenames: false
   require_serial: true
   always_run: true
